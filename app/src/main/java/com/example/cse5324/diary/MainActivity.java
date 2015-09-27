@@ -11,7 +11,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
     }
 
     @Override
@@ -31,6 +31,15 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.events){
+            return true;
+            //call events
+        } else if (id == R.id.trips){
+            return true;
+            //call trips
+        } else if (id == R.id.profile){
+            return true;
+            //call profile
         }
 
         return super.onOptionsItemSelected(item);
